@@ -53,7 +53,11 @@
             box-shadow: 0 12px 30px rgba(13, 6, 37, 0.4) !important;
             transform: translateY(-2px);
         }
-        
+
+         .service-card {
+            width: 100%;
+         }
+
         /* Desktop styles with min-width */
         @media screen and (min-width: 600px) {
             .container {
@@ -71,13 +75,46 @@
                 line-height: 30px !important;
             }
             .mobile-padding {
-               padding: 60px 40px 50px !important;
+               padding: 50px 20px !important;
             }
             .cardImage {
                 width: 74% !important;
                 margin-left: auto !important;
                 margin-right: auto !important;
             }
+
+            .service-card {
+            display: inline-table;
+            min-height: 312px !important;
+            }
+
+            
+            /* Remove bottom margin from cards in the first row */
+            tr:nth-child(1) .service-card,
+            tr:nth-child(2) .service-card {
+            margin-bottom: 20px !important;
+            }
+            
+            /* Remove bottom margin from last card */
+            tr:last-child .service-card {
+            margin-bottom: 0 !important;
+            }
+
+            .card-wrapper {
+              width: 50% !important;
+              box-sizing: border-box;
+              display: inline-block !important;
+            }
+            .card-wrapper:nth-child(1){
+                padding-right: 10px;
+            }
+            .card-wrapper.card3{
+                padding-bottom: 0px !important;
+            }
+            .card-wrapper:nth-child(2){
+                padding-left: 10px;
+            }
+
         }
         
         /* Mobile-specific styles */
@@ -189,208 +226,104 @@
                     
                     <!-- Services Section with Cards -->
                     <tr>
-                        <td class="mobile-padding" style="padding: 40px 16px; background-color: #d9ebfd;">
+                        <td class="mobile-padding" style="padding: 20px 16px; background-color: #d9ebfd;">
                             
                             <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                                <tr>
+                                <tbody>
+                                    <tr>
                                     <td align="center" style="padding-bottom: 40px;">
                                         <h2 style="margin: 0; color: #1E293B; font-size: 28px; line-height: 36px; font-weight: 700;">
-                                            Our <span class="gradient-text">Professional Services</span>
+                                        Our <span class="gradient-text">Professional Services</span>
                                         </h2>
                                         <p style="margin: 10px 0 0; color: #64748B; font-size: 16px;">End-to-end digital marketing solutions</p>
                                     </td>
-                                </tr>
-                                
-                                <!-- Card 1: Social Media Management (Facebook + Instagram) -->
-                                <tr>
-                                    <td style="padding-bottom: 25px;">
-                                        <table class="service-card" role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                                            <tr>
-                                                <td style="padding: 20px;">
-                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                                                        <tr>
-                                                            <td style="padding-bottom: 20px;">
-                                                                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                                                                    <tr>
-                                                                        <td style="width: 100%; vertical-align: middle;">
-                                                                            <div class="cardImage" style="width: 100%; border-radius: 6px; margin-bottom: 15px; display: flex; align-items: center; justify-content: center;">
-                                                                              <img loading="eager" width="100%" style="max-width: 100%; border: 0; display: block;" src="https://shriiitrackingsolutions.github.io/Shriii_SocialMedia_EmailTemplate/images/SocialMediaManagement.png" alt="Car Parking Tensile Structure">
-                                                                            </div>
-                                                                            <h3 style="margin: 0; color: #1E293B; font-size: 22px; font-weight: 700;">
-                                                                                Social Media Management
-                                                                            </h3>
-                                                                        </td> 
-                                                                    </tr>
-                                                                </table>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="padding-bottom: 15px;">
-                                                                <p style="margin: 0; color: #475569; font-size: 15px; line-height: 23px;">
-                                                                    Complete Facebook & Instagram management including professional post creation, audience engagement, community building, and targeted advertising campaigns.
-                                                                </p>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <ul style="margin: 0; padding-left: 0px; color: #334155; font-size: 14px; line-height: 22px; list-style: none;">
-                                                                    <li style="margin-bottom: 6px;">✓ Professional post creation & scheduling</li>
-                                                                    <li style="margin-bottom: 6px;">✓ Community engagement & response management</li>
-                                                                    <li style="margin-bottom: 6px;">✓ Targeted advertising campaigns</li>
-                                                                    <li>✓ Story & reel content strategy</li>
-                                                                </ul>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                                
-                                <!-- Card 2: Graphic Design Services -->
-                                <tr>
-                                    <td style="padding-bottom: 25px;">
-                                        <table class="service-card" role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                                            <tr>
-                                                <td style="padding: 20px;">
-                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                                                        <tr>
-                                                            <td style="padding-bottom: 20px;">
-                                                                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                                                                    <tr>
-                                                                        <td style="width: 100%; vertical-align: middle;">
-                                                                            <div class="cardImage" style="width: 100%; border-radius: 6px; margin-bottom: 15px; display: flex; align-items: center; justify-content: center;">
-                                                                              <img loading="lazy" width="100%" style="max-width: 100%; border: 0; display: block;" src="https://shriiitrackingsolutions.github.io/Shriii_SocialMedia_EmailTemplate/images/GraphicDesignServices.png" alt="Car Parking Tensile Structure">
-                                                                            </div>
-                                                                            <h3 style="margin: 0; color: #1E293B; font-size: 22px; font-weight: 700;">
-                                                                                Graphic Design Services
-                                                                            </h3>
-                                                                        </td>
-                                                                        
-                                                                    </tr>
-                                                                </table>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="padding-bottom: 15px;">
-                                                                <p style="margin: 0; color: #475569; font-size: 15px; line-height: 23px;">
-                                                                    Professional graphic design solutions for all your marketing needs including print materials and digital creatives.
-                                                                </p>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <ul style="margin: 0; padding-left: 0px; color: #334155; font-size: 14px; line-height: 22px; list-style: none;">
-                                                                    <li style="margin-bottom: 6px;">✓ Flyers & Brochures design</li>
-                                                                    <li style="margin-bottom: 6px;">✓ Business Cards & stationery</li>
-                                                                    <li style="margin-bottom: 6px;">✓ Social Media Creatives</li>
-                                                                    <li>✓ Brand identity & logo design</li>
-                                                                </ul>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                                
-                                <!-- Card 3: LinkedIn Management -->
-                                <tr>
-                                    <td style="padding-bottom: 25px;">
-                                        <table class="service-card" role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                                            <tr>
-                                                <td style="padding: 20px;">
-                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                                                        <tr>
-                                                            <td style="padding-bottom: 20px;">
-                                                                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                                                                    <tr>
-                                                                        <td style="width: 100%; vertical-align: middle;">
-                                                                            <div class="cardImage" style="width: 100%; border-radius: 6px; margin-bottom: 15px; display: flex; align-items: center; justify-content: center;">
-                                                                              <img width="100%" style="max-width: 100%; border: 0; display: block;" loading="lazy" src="https://shriiitrackingsolutions.github.io/Shriii_SocialMedia_EmailTemplate/images/LinkedInManagementAndAdvertising.png" alt="Car Parking Tensile Structure">
-                                                                            </div>
-                                                                            <h3 style="margin: 0; color: #1E293B; font-size: 22px; font-weight: 700;">
-                                                                                LinkedIn Management & Advertising
-                                                                            </h3>
-                                                                        </td>
-                                                                    </tr>
-                                                                </table>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="padding-bottom: 15px;">
-                                                                <p style="margin: 0; color: #475569; font-size: 15px; line-height: 23px;">
-                                                                    Professional LinkedIn profile management and B2B advertising solutions to establish thought leadership and generate quality leads.
-                                                                </p>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <ul style="margin: 0; padding-left: 0px; color: #334155; font-size: 14px; line-height: 22px; list-style: none;">
-                                                                    <li style="margin-bottom: 6px;">✓ Company page optimization & management</li>
-                                                                    <li style="margin-bottom: 6px;">✓ B2B lead generation campaigns</li>
-                                                                    <li style="margin-bottom: 6px;">✓ Thought leadership content creation</li>
-                                                                    <li>✓ Professional network building</li>
-                                                                </ul>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                                
-                                <!-- Card 4: Google My Business -->
-                                <tr>
-                                    <td>
-                                        <table class="service-card" role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                                            <tr>
-                                                <td style="padding: 20px;">
-                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                                                        <tr>
-                                                            <td style="padding-bottom: 20px;">
-                                                                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                                                                    <tr>
-                                                                        <td style="width: 100%; vertical-align: middle;">
-                                                                            <div class="cardImage" style="width: 100%; border-radius: 6px; margin-bottom: 15px; display: flex; align-items: center; justify-content: center;">
-                                                                              <img width="100%" style="max-width: 100%; border: 0; display: block;" loading="lazy" src="https://shriiitrackingsolutions.github.io/Shriii_SocialMedia_EmailTemplate/images/GoogleMyBusinessOptimization.png" alt="Car Parking Tensile Structure">
-                                                                            </div>
-                                                                            <h3 style="margin: 0; color: #1E293B; font-size: 22px; font-weight: 700;">
-                                                                                Google My Business Optimization
-                                                                            </h3>
-                                                                        </td>
-                                                                    </tr>
-                                                                </table>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="padding-bottom: 15px;">
-                                                                <p style="margin: 0; color: #475569; font-size: 15px; line-height: 23px;">
-                                                                    Optimize your Google My Business profile for maximum local visibility, customer engagement, and improved search rankings.
-                                                                </p>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <ul style="margin: 0; padding-left: 0px; color: #334155; font-size: 14px; line-height: 22px; list-style: none;">
-                                                                    <li style="margin-bottom: 6px;">✓ Profile setup & complete optimization</li>
-                                                                    <li style="margin-bottom: 6px;">✓ Regular posts & updates management</li>
-                                                                    <li style="margin-bottom: 6px;">✓ Review management & response</li>
-                                                                    <li>✓ Local SEO enhancement</li>
-                                                                </ul>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                                
-                            </table>
+                                    </tr>
+                                </tbody>
+                                </table>
+
+                                <!-- Service Cards Container -->
+                                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse;">
+  <!-- Row 1: Cards 1 & 2 -->
+  <tr>
+    <td style="padding: 0;">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse;">
+        <tr>
+          <!-- Card 1 -->
+          <td class="card-wrapper" width="50%" valign="top" style=" padding-bottom: 20px; width: 100% ; display: block ;">
+            <table class="service-card" role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background: #FFFFFF; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); height: auto">
+              <tr>
+                <td valign="middle" style="padding: 10px; height: auto">
+                  <div class="cardImage" style="width: 100%; border-radius: 6px; margin-bottom: 15px; text-align: center;">
+                    <img loading="eager" width="100%" style="max-width: 100%; border: 0; display: block;" src="https://shriiitrackingsolutions.github.io/Shriii_SocialMedia_EmailTemplate/images/SocialMediaManagement.png" alt="Social Media Management">
+                  </div>
+                  <h3 style="margin: 0 0 12px 0; color: #1E293B; font-size: 16px; font-weight: 700; text-align: center;">Social Media Management</h3>
+                  <p style="margin: 0; color: #475569; font-size: 12px; line-height: 18px; text-align: center;">Comprehensive Facebook and Instagram management includes tailored post creation, audience engagement and response, community building, targeted advertising campaigns, and a full story and reel strategy for strong brand presence.</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+          
+          <!-- Card 2 -->
+          <td class="card-wrapper" width="50%" valign="top" style=" padding-bottom: 20px; width: 100% ; display: block ;">
+            <table class="service-card" role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background: #FFFFFF; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); height: auto">
+              <tr>
+                <td valign="middle" style="padding: 10px; height: auto">
+                  <div class="cardImage" style="width: 100%; border-radius: 6px; margin-bottom: 15px; text-align: center;">
+                    <img loading="lazy" width="100%" style="max-width: 100%; border: 0; display: block;" src="https://shriiitrackingsolutions.github.io/Shriii_SocialMedia_EmailTemplate/images/GraphicDesignServices.png" alt="Graphic Design Services">
+                  </div>
+                  <h3 style="margin: 0 0 12px 0; color: #1E293B; font-size: 16px; font-weight: 700; text-align: center;">Graphic Design Services</h3>
+                  <p style="margin: 0; color: #475569; font-size: 12px; line-height: 18px; text-align: center;">Get professional graphic design solutions for marketing and branding, covering flyers, brochures, social media creatives, business cards, stationery, and distinctive brand identity with expert logo design.</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  
+  <!-- Row 2: Cards 3 & 4 -->
+  <tr>
+    <td style="padding: 0;">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse;">
+        <tr>
+          <!-- Card 3 -->
+          <td class="card-wrapper card3" width="50%" valign="top" style=" padding-bottom: 20px; width: 100% ; display: block ;">
+            <table class="service-card" role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background: #FFFFFF; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); height: auto">
+              <tr>
+                <td valign="middle" style="padding: 10px; height: auto">
+                  <div class="cardImage" style="width: 100%; border-radius: 6px; margin-bottom: 15px; text-align: center;">
+                    <img loading="lazy" width="100%" style="max-width: 100%; border: 0; display: block;" src="https://shriiitrackingsolutions.github.io/Shriii_SocialMedia_EmailTemplate/images/LinkedInManagementAndAdvertising.png" alt="LinkedIn Management">
+                  </div>
+                  <h3 style="margin: 0 0 12px 0; color: #1E293B; font-size: 16px; font-weight: 700; text-align: center;">LinkedIn Management & Advertising</h3>
+                  <p style="margin: 0; color: #475569; font-size: 12px; line-height: 18px; text-align: center;">Enhance your LinkedIn profile with company page optimization, B2B lead generation, thought leadership content, and professional network building for high-quality leads and industry visibility.</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+          
+          <!-- Card 4 -->
+          <td class="card-wrapper" width="50%" valign="top" style="width: 100% ; display: block ;">
+            <table class="service-card" role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background: #FFFFFF; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); height: auto">
+              <tr>
+                <td valign="middle" style="padding: 10px; height: auto">
+                  <div class="cardImage" style="width: 100%; border-radius: 6px; margin-bottom: 15px; text-align: center;">
+                    <img loading="lazy" width="100%" style="max-width: 100%; border: 0; display: block;" src="https://shriiitrackingsolutions.github.io/Shriii_SocialMedia_EmailTemplate/images/GoogleMyBusinessOptimization.png" alt="Google My Business">
+                  </div>
+                  <h3 style="margin: 0 0 12px 0; color: #1E293B; font-size: 16px; font-weight: 700; text-align: center;">Google My Business Optimization</h3>
+                  <p style="margin: 0; color: #475569; font-size: 12px; line-height: 18px; text-align: center;">Boost local visibility and engagement with complete Google My Business setup, regular content updates, responsive review management, and local SEO tactics for improved search ranking and customer reach.</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+
+
                         </td>
                     </tr>
                     
